@@ -12,7 +12,7 @@ body *{
 
 .wrap{
     background-color: #eee;
-    max-width: 1200px;
+    max-width: auto;
     margin: 1em;
     padding: 1em;
 }
@@ -214,15 +214,17 @@ div.arrowbutton:hover i.arrow{
 }
 
 
-
 /* MEDIA QUERIES */
 
-@media only screen and (max-width : 359px){
+@media only screen and (max-width : 389px){
     .grid.XS{
         display: grid;
         grid-template-rows: 50% 50%;
         row-gap: 1em;
-        margin-bottom: 8%;
+        margin-bottom: 14%;
+    }
+    .menu.S{
+        flex-direction: row-reverse;
     }
     .SmNx{
         display: none;
@@ -239,6 +241,7 @@ div.arrowbutton:hover i.arrow{
         margin-bottom: -1em;
         grid-column: 1 / span 2;
         padding: 1.5em 0.5em 0em;
+        border-radius: 16px 16px 0 0;
     }
     .img.XS{
         grid-column: 1 / span 2;
@@ -250,7 +253,7 @@ div.arrowbutton:hover i.arrow{
     }
 }
 
-@media only screen and (min-width : 360px) and (max-width : 680px){
+@media only screen and (min-width : 390px) and (max-width : 679px){
     .sml{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -262,6 +265,9 @@ div.arrowbutton:hover i.arrow{
     div.upper.S a{
         flex-direction: column;
         margin-bottom: 1em;
+    }
+    .menu.S{
+        flex-direction: row-reverse;
     }
     div.upper.menu.S{
         justify-content: space-around;
@@ -281,6 +287,7 @@ div.arrowbutton:hover i.arrow{
         margin-bottom: -1em;
         grid-column: 1 / span 2;
         padding: 1.5em 0.5em 0em;
+        border-radius: 16px 16px 0 0;
     }
     .second-grid.S{
         grid-template-rows: 76% 25%;
@@ -313,7 +320,8 @@ div.arrowbutton:hover i.arrow{
         grid-auto-rows: auto;
     }
     .textcolumn.M{
-        padding: 1.5em 0.5em 0em;
+        padding: 15% 0.5em 0em;
+        border-radius: 16px 0 0 16px;
     }
     .second-grid.M{
         display: block;
@@ -339,7 +347,8 @@ div.arrowbutton:hover i.arrow{
         row-gap: 1em;
     }
     .textcolumn.L{
-        padding: 3em 0.5em 0em;
+        padding: 38% 0.5em 0em;
+        border-radius: 16px 0 0 16px;
     }
     .second-grid.L{
         grid-template-rows: 58% 42%;
