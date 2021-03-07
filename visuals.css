@@ -1,0 +1,356 @@
+body *{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    border: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.wrap{
+    background-color: #eee;
+    max-width: 1200px;
+    margin: 1em;
+    padding: 1em;
+}
+
+header{
+    background-color: #aaaaaa;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.logo{
+    height: 4em;
+}
+
+.upper{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+}
+
+.ship{
+    flex: 0 1 8%;
+    text-decoration: none;
+    color: linen;
+    display: block;
+    text-align: center;
+    padding: 6px;
+}
+
+.ship:hover{
+    background-color: dimgrey;
+    border-radius: 4px;
+}
+
+.search-container{
+    font-size: inherit;
+    margin-left: auto;
+    flex: 0 1 22%;
+}
+
+.search-container form{
+    display: flex;
+    padding: 0px 6px 0px 38px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid gray;
+    margin-right: 0.5em;
+}
+
+.searchbar{
+    font-size: inherit;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: linen;
+}
+
+.upper button{
+    font-size: 2em;
+    display: contents;
+}
+
+.upper button i.fa-shopping-basket{
+    padding: 8px;
+}
+
+.upper button i.fa-shopping-basket:hover{
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.link{
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    display: block;
+}
+
+.link:hover{
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+hr{
+    width: 90%;
+    margin: 5px auto 0px auto;
+    display: block;
+    border: 2px solid black;
+}
+
+.menu{
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.line{
+    justify-self: center;
+}
+
+
+/* MaIN CONTENT */
+
+.grid{
+    display: grid;
+    column-gap: 1em;
+    margin: 1em 0em;
+}
+
+/* .grid div{
+    border: 1px solid black;
+} REMOVE AT END OF PROJECT  */
+
+div.textcolumn{
+    text-align: center;
+    margin-right: -1em;
+    margin-bottom: 4px;
+    color: linen;
+    background-color: #2f6c7f;
+}
+
+div.textcolumn div h3 a{
+    font-size: x-large;
+    text-decoration: none;
+    color: linen;
+    padding-top: .5em;
+    display: block;
+    border: none;
+}
+
+.main-img{
+    width: 100%;
+}
+
+.second-grid{
+    display: grid;
+    justify-items: center;
+}
+
+div.arrowbutton{
+    place-self: start center;
+    text-align: end;
+    font-size: 1.5em;
+    border: none;
+    background-color: #2f6c7f;
+    color: linen;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+div.arrowbutton:hover{
+    background-color: #45a1bd;
+}
+
+i.arrow{
+    font-size: xx-large;
+    background-color: #2f6c7f;
+    color: linen;
+    transition: 0.3s;
+}
+
+div.arrowbutton:hover i.arrow{
+    background-color: #45a1bd;
+}
+
+.side-img{
+    width: 100%;
+}
+
+
+
+/* BOTTOM CATEGORIES */
+
+
+.categories{
+    background-color: lightgray;
+    padding: 1em;
+    text-align: center;
+}
+
+.categories a h4{
+    color: black;
+    text-decoration: none;
+}
+
+.categories a{
+    text-decoration-line: none;
+}
+
+.categories a img{
+    width: 80px;
+    border: 1px solid black;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width : 359px){
+    .grid.XS{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        row-gap: 1em;
+        margin-bottom: 8%;
+    }
+    .SmNx{
+        display: none;
+    }
+    div.upper.S{
+        flex-direction: column;
+    }
+    div.upper.S a{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .textcolumn.XS{
+        margin-right: 0em;
+        margin-bottom: -1em;
+        grid-column: 1 / span 2;
+        padding: 1.5em 0.5em 0em;
+    }
+    .img.XS{
+        grid-column: 1 / span 2;
+    }
+    .sml{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+@media only screen and (min-width : 360px) and (max-width : 680px){
+    .sml{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    div.upper.S{
+        flex-direction: column;
+    }
+    div.upper.S a{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    div.upper.menu.S{
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .SmNx{
+        display: none;
+    }
+    .grid.S{
+        display: grid;
+        grid-template-rows: 40% 60%;
+        row-gap: 1em;
+        margin-bottom: 20%;
+    }
+    .textcolumn.S{
+        margin-right: 0em;
+        margin-bottom: -1em;
+        grid-column: 1 / span 2;
+        padding: 1.5em 0.5em 0em;
+    }
+    .second-grid.S{
+        grid-template-rows: 76% 25%;
+        grid-column: 1 / span 2;
+        padding: 1em;
+    }
+    .img.S{
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (min-width : 680px) and (max-width : 900px){
+    div.search-container.M{
+        display: flex;
+    }
+    .menu.M{
+        justify-content: space-between;
+    }
+    .med{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1em;
+    }
+    .link.M{
+        display: block;
+    }
+    .grid.M{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-auto-rows: auto;
+    }
+    .textcolumn.M{
+        padding: 1.5em 0.5em 0em;
+    }
+    .second-grid.M{
+        display: block;
+        grid-template-rows: 84% 30%;
+        grid-column: 1 / span 2;
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width : 900px){
+    div.search-container.L{
+        display: flex;
+    }
+    .grid.L{
+        display: grid;
+        grid-template-columns: 20% 45% 32%;
+        column-gap: 1em;
+        margin: 1em 0em;
+    }
+    .med{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1em;
+    }
+    .textcolumn.L{
+        padding: 3em 0.5em 0em;
+    }
+    .second-grid.L{
+        grid-template-rows: 58% 42%;
+        grid-row: auto;
+        grid-column: 3 / span 1;
+    }
+}
+
+@media only screen and (min-width : 1200px){
+    .lrg{
+        display: flex;
+        justify-content: space-between;
+    }
+}
