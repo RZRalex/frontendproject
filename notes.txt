@@ -5,5 +5,5 @@ icons by font awesome
 tasks:
 [x] complete media queries
 [x] clear up image folders
-[ ] upload to git
+[x] upload to git
 [ ] record video overview
