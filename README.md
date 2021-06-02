@@ -4,6 +4,7 @@ This project was made to demonstrate standard page layout, styling, and responsi
 This was a web fundamentals project to show comprehension on HTML and CSS.
 From making this mock up site I learned to organize each block of a webpage into respective areas so that they can adjust to screen sizes big and small. Using flexbox to make the transitions easier and hover styling to add effects felt exciting to pick up and make a webpage into a small experience.
 I used all of my own photography as the images in this site that could technically be the real front page to my photo website if I so chose.
+**This page is only for appearances only, there is no functioning actions on this site**
 
 
 ## Notes
